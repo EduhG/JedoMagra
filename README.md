@@ -2,11 +2,11 @@
 _________________
 
 **Repo Link** https://github.com/EduhG/JedoMagra
+**Website Link** https://github.com/EduhG/JedoMagra
 
 **Project Details**
 
  A Single page website for a startup SME (Small and Medium-Sized Enterprise) dealing with production and packaging of natural tomato products.
-
 
 **Features**
 
