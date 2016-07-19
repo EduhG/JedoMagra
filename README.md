@@ -3,7 +3,7 @@ _________________
 
 **Repo Link** https://github.com/EduhG/JedoMagra
 
-**Website Link** http://jedomagra-enterprises.bitballoon.com
+**Website Link** https://jedomagra-enterprises.netlify.com
 
 **Project Details**
 
