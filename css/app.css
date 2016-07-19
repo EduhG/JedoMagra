@@ -260,15 +260,15 @@ Header Section
 }
 
 .header-section {
-    background: transparent;
+    background: rgba(100, 200, 255, 0.5);
     height: auto;
     margin: 0 auto !important;
-    width: 90%;
+    width: 100%;
     border-bottom: 3px solid #ddd;
     z-index: 1000;
     color: #000;
     position: absolute;
-    left: 5%;
+    left: 0%;
 }
 
 .caption-text {
