@@ -246,10 +246,17 @@ Header Section
 }
 
 .banner {
-    line-height: 100vh;
+    line-height: 110vh;
     text-align: center;
     font-size: 3.0rem;
     color: #000;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background: url(../images/header-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: 100% auto;
+    height: 100vh;
 }
 
 .header-section {
@@ -258,9 +265,12 @@ Header Section
     margin: 0 auto !important;
     width: 90%;
     border-bottom: 3px solid #ddd;
+    z-index: 1000;
+    color: #000;
+    position: absolute;
+    left: 5%;
 }
 
 .caption-text {
     position: relative;
-    top: -10vh
 }
