@@ -162,6 +162,33 @@ Page Scrolling
 
 -------------------------------- */
 
+body {
+    font-size: 1.6rem;
+    font-family: "Open Sans", sans-serif;
+    color: #ffffff;
+    background-color: #22283f;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'mobile';
+    display: none;
+}
+
+@media only screen and (min-width: 480px) {
+    body::before {
+        /* never visible - this is used in jQuery to check the current MQ */
+        content: 'desktop';
+    }
+}
+
+a {
+    color: #267481;
+    text-decoration: none;
+}
+
 .section {
     height: 100vh;
 }
@@ -173,6 +200,7 @@ Page Scrolling
 
 .section:first-of-type > div {
     background-color: #2b334f;
+    z-index: 1000;
 }
 
 .section:nth-of-type(2) > div {
@@ -200,6 +228,7 @@ Header Section
 
 .logo p {
     color: #000;
+    text-align: center
 }
 
 .nav-links nav {
