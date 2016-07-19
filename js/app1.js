@@ -10,8 +10,8 @@ jQuery(document).ready(function ($) {
     //DOM elements
     var sectionsAvailable = $('.section'),
         verticalNav = $('.cd-vertical-nav'),
-        prevArrow = verticalNav.find('a.scroll-prev'),
-        nextArrow = verticalNav.find('a.scroll-next');
+        prevArrow = verticalNav.find('a.cd-prev'),
+        nextArrow = verticalNav.find('a.cd-next');
 
 
     //check the media query and bind corresponding events
@@ -422,6 +422,18 @@ jQuery(document).ready(function ($) {
         return [translateY, scale, rotateX, opacity, boxShadowBlur];
     }
 
+    /*
+	IMPORTANT
+	this is for the demo only
+	remove this in normal production
+	*/
+    var domain = 'http://codyhouse.co/demo/page-scroll-effects/';
+    $('.cd-demo-settings').on('change', function () {
+        var animation = $('#selectAnimation').find("option:selected").val(),
+            scrollType = $('#selectHijacking').find("option:selected").val(),
+            newFile = (scrollType == 'off') ? animation + '.html' : animation + '-hijacking.html';
+        window.location.href = domain + newFile;
+    });
 });
 
 /* Custom effects registration - feature available in the Velocity UI pack */
